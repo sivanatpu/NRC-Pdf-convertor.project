@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: monospace; */
+}
+
+.full-box {
+    /* border: 2px solid black; */
+    width: 260px;
+    /* height: 800px; */
+}
+
+.box1 {
+    width: 240px;
+    height: 399px;
+    border-right: 5px solid red;
+    border-left: 5px solid yellow;
+    border-top: 5px solid green;
+    border-bottom: 5px solid blueviolet;
+}
+
+.logo {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: 20px;
+    border-top: 30px solid orangered;
+    border-right: 30px solid #4285f4;
+    border-bottom: 30px solid #34a853;
+    border-left: 30px solid #fbbc05;
+    border-radius: 50%;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    background: #4285f4;
+    width: 70px;
+    height: 25px;
+    top: 50%;
+    right: -28px;
+    transform: translateY(-70%);
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    top: -52px;
+    right: -43px;
+    border-top: 80px solid transparent;
+    border-right: 100px solid white;
+}
+
+.font-size {
+    margin-top: 40px;
+    /* margin-left: 10px; */
+    display: inline-flex;
+}
+
+.fa-star {
+    color: #fbbc05;
+    font-size: 25px;
+}
+
+.searchbar {
+    font-size: large;
+    border: 1px solid black;
+    width: 210px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 4px 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    /* font-family: 'pacifico',cursive; */
+    font-family: monospace;
+}
+
+.image p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    color: red;
+    -webkit-text-stroke: 0.3px yellow;
+    margin-top: 10px;
+    /* border: 2px solid black; */
+    width: 190px;
+    height: 110px;
+    background-image: url(last.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.word {
+    position: relative;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1.5px palevioletred;
+    top: -30px;
+}
+
+.second-box {
+    border: 2px solid black;
+    width: 240px;
+    margin-top: 10px;
+    height: 400px;
+}
+
+.second-box h3 {
+    margin-top: 15px;
+    font-size: 32px;
+    font-family: monospace;
+    font-weight: 400;
+
+}
+
+
+
+.one .fa-star {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+    letter-spacing: -14px;
+}
+
+.one {
+    display: flex;
+    justify-content: baseline;
+
+}
+
+.second-box .one ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 38px;
+    font-family: monospace;
+    font-weight: 590;
+    margin-left: 25px;
+    letter-spacing: -2px;
+}
+
+.second-box .one ul li:nth-child(1) {
+    color: #4285f4;
+}
+
+.second-box .one ul li:nth-child(2) {
+    color: orangered;
+}
+
+.second-box .one ul li:nth-child(3) {
+    color: #fbbc05;
+}
+
+.second-box .one ul li:nth-child(4) {
+    color: #4285f4;
+}
+
+.second-box .one ul li:nth-child(5) {
+    color: #34a853;
+}
+
+.second-box .one ul li:nth-child(6) {
+    color: orangered;
+}
+
+.border {
+    border: 1.8px dashed #D3D3D3;
+    margin-top: 20px;
+    width: 180px;
+    height: 160px;
+    padding-top: 10px;
+    border-radius: 2px;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    background-image: url(q2.png);
+    background-size: cover;
+
+}
+
+.last {
+
+    position: relative;
+    top: 34px;
+    right: 60px;
+    font-family: "consolas", sans-serif;
+    font-weight: 900;
+    font-size: 0.5rem;
+    width: 90px;
+    height: 60px;
+    word-spacing: -5px;
+
+
+
+}
+
+.image1 {
+    width: 100px;
+    height: 60px;
+    background-color: #34a853;
+    position: relative;
+    top: -60px;
+    left: 100px;
+    font-size: 15px;
+    font-weight: 900;
+    color: red;
+    -webkit-text-stroke: 0.9px yellow;
+    background-image: url(last.png);
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.design {
+    position: relative;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1.5px palevioletred;
+    top: 25px;
+
+    width: 100px;
+
+
+}
+
+.second-box {
+    border-right: 5px solid red;
+    border-left: 5px solid yellow;
+    border-top: 5px solid green;
+    border-bottom: 5px solid blueviolet;
+}
+
+/* button{
+  
+} */
