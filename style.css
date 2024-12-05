@@ -75,6 +75,30 @@
     font-family: monospace;
 }
 
+.search-input{  
+    font-size: large;    
+    border: none;
+    outline: none;
+    width: 175px;
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 2px 2px;
+    background: transparent;
+}
+
+.search-input:focus {
+    border-bottom: 2px solid #000;
+    animation: blink-cursor 1s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
 .image p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
@@ -89,6 +113,20 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.image p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    color: red;
+    -webkit-text-stroke: 0.3px yellow;
+    margin-top: 10px;
+    width: 190px;
+    height: 110px;
+    background-size: cover; /* Ensures the image fits the space */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .word {
     position: relative;
