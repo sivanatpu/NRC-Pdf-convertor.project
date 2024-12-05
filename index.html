@@ -18,10 +18,10 @@
 </head>
 
 <body>
-    <center>
-        <script src="pdf-download.js"></script>
+     <center>
         <button id="btn">download</button>
-
+        <button id="search-btn">Search Bar</button>
+        <button id="change-logo-btn">Change Logo</button>
         <div class="full-box" id="content">
             <div class="box1">
                 <div class="logo">
@@ -34,13 +34,13 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div>
-                    <h1 class="searchbar">
+                    <h1 id="search-area" class="searchbar">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        Dhandapani tops world
+                        <span id="dynamic-text">Dhandapani tops world</span>
                     </h1>
                 </div>
                 <div class="image">
-                    <p>
+                    <p id="logo">
                         DHANDAPANI'S
                     </p>
                     <div class="word">
@@ -86,10 +86,7 @@
             </div>
         </div>
     </center>
-
+    <script src="pdf-download.js"></script>
 </body>
-<script>
-
-</script>
 
 </html>
