@@ -111,6 +111,73 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const uploadInput = document.getElementById("upload-image");
+  const logoElement = document.querySelector(".image p");
+
+  if (uploadInput) {
+      uploadInput.addEventListener("change", function (event) {
+          const file = event.target.files[0];
+          if (file) {
+              const reader = new FileReader();
+              reader.onload = function (e) {
+                  const img = new Image();
+                  img.src = e.target.result;
+
+                  img.onload = function () {
+                      const canvas = document.createElement("canvas");
+                      const context = canvas.getContext("2d");
+
+                      // Set a higher resolution for the canvas
+                      const targetWidth = 500; // Change to desired width
+                      const aspectRatio = img.height / img.width;
+                      canvas.width = targetWidth;
+                      canvas.height = targetWidth * aspectRatio;
+
+                      // Draw image on canvas with improved resolution
+                      context.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                      // Convert canvas back to a high-quality data URL
+                      const highQualityImage = canvas.toDataURL("image/png", 1.0); // Maximum quality
+
+                      logoElement.style.backgroundImage = `url(${highQualityImage})`;
+                      logoElement.style.backgroundSize = "cover";
+                      logoElement.style.backgroundPosition = "center";
+                  };
+              };
+              reader.readAsDataURL(file);
+          }
+      });
+  } else {
+      console.error("Image upload input not found.");
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

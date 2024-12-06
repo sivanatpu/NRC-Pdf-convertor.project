@@ -288,6 +288,15 @@
    transition: all 0.2s ease;
 }
 
+.image p {
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: -webkit-optimize-contrast; /* For WebKit-based browsers */
+    image-rendering: pixelated; /* For modern browsers */
+    image-rendering: auto;
+}
+
 button:active{
     transform: scale(0.96);
 }
