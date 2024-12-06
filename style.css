@@ -8,7 +8,7 @@
     /* border: 2px solid black; */
     width: 260px;
     /* height: 800px; */
-    margin-top: -35px;
+    margin-top:-30px ;
 }
 
 .box1 {
@@ -49,7 +49,7 @@
     top: -52px;
     right: -43px;
     border-top: 80px solid transparent;
-    border-right: 100px solid white;
+    border-right: 100px solid #0B2C3D;
 }
 
 .font-size {
@@ -281,12 +281,12 @@
     image-rendering: auto;
 }
 
-#btn,
+/* #btn,
 #search-btn,
 #change-logo-btn{
-   /* position: relative;
+   position: relative;
    left: 340px;
-   top: 170px; */
+   top: 170px;
    margin-left: 10px;
    padding: 15px 12px;
    color: #fff;
@@ -295,23 +295,23 @@
    border: none;
    font-weight: 700;
    transition: all 0.2s ease;
-}
+} */
 
-button:active{
+/* button:active{
     transform: scale(0.96);
-}
+} */
 
-#btn{
-    /* position:relative;
+/* #btn{
+    position:relative;
     top: 230px;
-    left: 130px; */
+    left: 130px;
     background-color:#008000;
-}
+} */
 
-#upload-image{
-    /* position: relative;
+/* #upload-image{
+    position: relative;
     top: 200px;
-    right: 100px; */
+    right: 100px;
     width: 190px;
     padding:15px 15px;
     color: #fff;
@@ -320,11 +320,11 @@ button:active{
     border:#7d2ae8 ;
     font-weight: 700;
     transition: all 0.2s ease;
-}
+} */
 
-input:active{
+/* input:active{
     transform: scale(0.96);
-}
+} */
 
 #btn,
 #upload-image,
@@ -333,6 +333,92 @@ input:active{
      display: inline-block;
      position: relative;
      top: 890px;
+     
+}
+
+/* Button 1: Upload Button */
+.btn-upload {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   margin-right: 10px;
+}
+.btn-upload:hover {
+    background-color: #0056b3;
+}
+
+/* Button 2: Download Button */
+.btn-download {
+    background-color: #28a745;
+    color: white;
+    border: 2px solid #28a745;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.btn-download:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* Button 3: Search Bar Button */
+.btn-search {
+    background-color: #ffc107;
+    color: #212529;
+    border: 1px solid #ffc107;
+    padding: 8px 18px;
+    font-size: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    margin-left: 10px;
+}
+.btn-search:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Button 4: Change Logo Button */
+.btn-change-logo {
+    background-color: #17a2b8; /* Teal color */
+    color: white;
+    border: 2px solid #17a2b8;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-style: italic;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+.btn-change-logo:hover {
+    background-color: #138496; /* Darker teal */
+    color: #f8f9fa;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+
+/* Linear Gradient Background for the Entire Screen */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensures the gradient covers the entire viewport */
+    background: linear-gradient(135deg, #0B2C3D  50%,#858D71  50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+center {
+    width: 100%;
+   
 }
 
 

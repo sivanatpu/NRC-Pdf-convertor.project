@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const uploadInput = document.getElementById("upload-image");
-  const logoElement = document.querySelector(".image p");
+  const imageElements = document.querySelectorAll(".image p, .image1");
 
   if (uploadInput) {
       uploadInput.addEventListener("change", function (event) {
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       const context = canvas.getContext("2d");
 
                       // Set a higher resolution for the canvas
-                      const targetWidth = 500; // Change to desired width
+                      const targetWidth = 500; // Adjust to desired width
                       const aspectRatio = img.height / img.width;
                       canvas.width = targetWidth;
                       canvas.height = targetWidth * aspectRatio;
@@ -137,12 +137,15 @@ document.addEventListener("DOMContentLoaded", function () {
                       // Draw image on canvas with improved resolution
                       context.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-                      // Convert canvas back to a high-quality data URL
-                      const highQualityImage = canvas.toDataURL("image/png", 1.0); // Maximum quality
+                      // Convert canvas to a high-quality data URL
+                      const highQualityImage = canvas.toDataURL("image/png", 1.0);
 
-                      logoElement.style.backgroundImage = `url(${highQualityImage})`;
-                      logoElement.style.backgroundSize = "cover";
-                      logoElement.style.backgroundPosition = "center";
+                      // Update both div elements
+                      imageElements.forEach(element => {
+                          element.style.backgroundImage = `url(${highQualityImage})`;
+                          element.style.backgroundSize = "cover";
+                          element.style.backgroundPosition = "center";
+                      });
                   };
               };
               reader.readAsDataURL(file);
