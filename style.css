@@ -1,7 +1,11 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* font-family: monospace; */
+    
+}
+
+body{
+    background-color: #FFFAFA;
 }
 
 .full-box {
@@ -49,7 +53,7 @@
     top: -52px;
     right: -43px;
     border-top: 80px solid transparent;
-    border-right: 100px solid ;
+    border-right: 100px solid #FFFAFA;
 }
 
 .font-size {
@@ -363,17 +367,18 @@
     transform: translateY(-2px); 
 }
 
- body {
+ /* body {
     margin: 0;
     padding: 0;
-    height: 140vh;
-    background: linear-gradient(-235deg, #0B2C3D  50%,#858D71  50%);
+    height: 100vh;
+    background: linear-gradient(-435deg, #0B2C3D  50%,#858D71  50%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 center {
     width: 100%;
    
-}   
+}    */
+
 
 
 
