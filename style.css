@@ -6,7 +6,7 @@
 
 .full-box {
     width: 260px;
-    margin-top: -120px;
+    margin-top: -20px;
    
 }
 
@@ -48,7 +48,7 @@
     top: -52px;
     right: -43px;
     border-top: 80px solid transparent;
-    border-right: 100px solid aliceblue;
+    border-right: 100px solid white;
 }
 
 .font-size {
@@ -288,7 +288,7 @@
 #change-logo-btn{
      display: inline;
      position: relative;
-     top: 790px;
+     top: 890px;
      
 }
 
@@ -354,7 +354,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     margin-left: 10px;
-    margin-top: 100px;
 }
 .btn-change-logo:hover {
     background-color: #138496; 
@@ -363,21 +362,7 @@
     transform: translateY(-2px); 
 }
 
-body{
-    background-color: aliceblue;
-}
 
- /* body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: linear-gradient(-235deg, #0B2C3D  50%,#858D71  50%);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-center {
-    width: 100%;
-   
-}    */
 
 
 
