@@ -260,7 +260,7 @@
     color: transparent;
     -webkit-text-stroke: 1.5px palevioletred;
     top: 25px;
-
+    word-spacing: 2px;
     width: 100px;
 
 
@@ -288,7 +288,7 @@
 #change-logo-btn{
      display: inline;
      position: relative;
-     top: 890px;
+     top: 950px;
      
 }
 
