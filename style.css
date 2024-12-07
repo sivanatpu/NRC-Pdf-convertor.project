@@ -1,16 +1,13 @@
 * {
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;   
 }
 
-body{
-    background-color: aliceblue;
-    box-sizing: border-box;
-}
 
 .full-box {
     width: 260px;
+    margin-top: -120px;
+   
 }
 
 .box1 {
@@ -289,9 +286,9 @@ body{
 #upload-image,
 #search-btn,
 #change-logo-btn{
-     display: inline-block;
+     display: inline;
      position: relative;
-     top: 890px;
+     top: 790px;
      
 }
 
@@ -305,7 +302,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-   margin-right: 10px;
+    margin-right: 5px;
 }
 .btn-upload:hover {
     background-color: #0056b3;
@@ -357,12 +354,17 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     margin-left: 10px;
+    margin-top: 100px;
 }
 .btn-change-logo:hover {
     background-color: #138496; 
     color: #f8f9fa;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px); 
+}
+
+body{
+    background-color: aliceblue;
 }
 
  /* body {
