@@ -5,14 +5,12 @@
 }
 
 body{
-    background-color: #FFFAFA;
+    background-color: aliceblue;
+    box-sizing: border-box;
 }
 
 .full-box {
-    /* border: 2px solid black; */
     width: 260px;
-    /* height: 800px; */
-    margin-top:-30px ;
 }
 
 .box1 {
@@ -53,7 +51,7 @@ body{
     top: -52px;
     right: -43px;
     border-top: 80px solid transparent;
-    border-right: 100px solid #FFFAFA;
+    border-right: 100px solid aliceblue;
 }
 
 .font-size {
@@ -371,7 +369,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(-435deg, #0B2C3D  50%,#858D71  50%);
+    background: linear-gradient(-235deg, #0B2C3D  50%,#858D71  50%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 center {
