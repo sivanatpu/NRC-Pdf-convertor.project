@@ -6,7 +6,7 @@
 
 .full-box {
     width: 260px;
-    margin-top: -35px;
+    /* margin-top: -35px; */
 }
 
 .box1 {
@@ -16,6 +16,7 @@
     border-left: 5px solid yellow;
     border-top: 5px solid green;
     border-bottom: 5px solid blueviolet;
+    margin-top: -40px;
    
 }
 
@@ -288,7 +289,7 @@
 #change-logo-btn{
      display: inline;
      position: relative;
-     top: 950px;
+     top: 890px;
      
 }
 
