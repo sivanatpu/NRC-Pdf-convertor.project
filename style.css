@@ -49,7 +49,7 @@
     top: -52px;
     right: -43px;
     border-top: 80px solid transparent;
-    border-right: 100px solid #0B2C3D;
+    border-right: 100px solid #502b64;
 }
 
 .font-size {
@@ -127,6 +127,8 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
 
 
 .word {
@@ -281,51 +283,6 @@
     image-rendering: auto;
 }
 
-/* #btn,
-#search-btn,
-#change-logo-btn{
-   position: relative;
-   left: 340px;
-   top: 170px;
-   margin-left: 10px;
-   padding: 15px 12px;
-   color: #fff;
-   border-radius: 6px;
-   background: #7d2ae8;
-   border: none;
-   font-weight: 700;
-   transition: all 0.2s ease;
-} */
-
-/* button:active{
-    transform: scale(0.96);
-} */
-
-/* #btn{
-    position:relative;
-    top: 230px;
-    left: 130px;
-    background-color:#008000;
-} */
-
-/* #upload-image{
-    position: relative;
-    top: 200px;
-    right: 100px;
-    width: 190px;
-    padding:15px 15px;
-    color: #fff;
-    border-radius: 6px;
-    background: #219B9D;
-    border:#7d2ae8 ;
-    font-weight: 700;
-    transition: all 0.2s ease;
-} */
-
-/* input:active{
-    transform: scale(0.96);
-} */
-
 #btn,
 #upload-image,
 #search-btn,
@@ -336,8 +293,8 @@
      
 }
 
-/* Button 1: Upload Button */
-.btn-upload {
+
+ .btn-upload {
     background-color: #007bff;
     color: white;
     border: none;
@@ -352,7 +309,7 @@
     background-color: #0056b3;
 }
 
-/* Button 2: Download Button */
+
 .btn-download {
     background-color: #28a745;
     color: white;
@@ -369,7 +326,7 @@
     transform: scale(1.1);
 }
 
-/* Button 3: Search Bar Button */
+
 .btn-search {
     background-color: #ffc107;
     color: #212529;
@@ -385,9 +342,9 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Button 4: Change Logo Button */
+
 .btn-change-logo {
-    background-color: #17a2b8; /* Teal color */
+    background-color: #17a2b8; 
     color: white;
     border: 2px solid #17a2b8;
     padding: 12px 24px;
@@ -400,25 +357,26 @@
     margin-left: 10px;
 }
 .btn-change-logo:hover {
-    background-color: #138496; /* Darker teal */
+    background-color: #138496; 
     color: #f8f9fa;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px); /* Slight lift effect */
+    transform: translateY(-2px); 
 }
 
-
-
-/* Linear Gradient Background for the Entire Screen */
 body {
     margin: 0;
     padding: 0;
-    height: 100vh; /* Ensures the gradient covers the entire viewport */
-    background: linear-gradient(135deg, #0B2C3D  50%,#858D71  50%);
+    height: 140vh;
+    /* background: linear-gradient(-235deg, #0B2C3D  50%,#858D71  50%); */
+    background: linear-gradient(-235deg, #502b64 50%, #272525 50%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 center {
     width: 100%;
    
-}
+}  
+
+
+
 
 
