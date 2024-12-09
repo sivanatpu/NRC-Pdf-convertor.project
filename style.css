@@ -1,11 +1,11 @@
 * {
     margin: 0px;
-    padding: 0px;   
+    padding: 0px;
+    /* font-family: monospace; */
 }
 
-
 .full-box {
-    width: 560px;
+    width: 260px;
     margin-top: -45px;
 }
 
@@ -16,7 +16,6 @@
     border-left: 5px solid yellow;
     border-top: 5px solid green;
     border-bottom: 5px solid blueviolet;
-   
 }
 
 .logo {
@@ -42,14 +41,14 @@
     transform: translateY(-70%);
 }
 
-.logo::after {
+ .logo::after {
     content: "";
     position: absolute;
     top: -52px;
     right: -43px;
     border-top: 80px solid transparent;
-    border-right: 100px solid white;
-}
+    border-right: 100px solid #fff;
+} 
 
 .font-size {
     margin-top: 40px;
@@ -64,7 +63,7 @@
 
 .searchbar {
     font-size: large;
-    border:3px solid black;
+    border: 1px solid black;
     width: 210px;
     margin-top: 15px;
     border-radius: 10px;
@@ -260,7 +259,7 @@
     color: transparent;
     -webkit-text-stroke: 1.5px palevioletred;
     top: 25px;
-    word-spacing: 2px;
+
     width: 100px;
 
 
@@ -286,7 +285,7 @@
 #upload-image,
 #search-btn,
 #change-logo-btn{
-     display: inline;
+     display: inline-block;
      position: relative;
      top: 890px;
      
@@ -302,7 +301,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-right: 5px;
+   margin-right: 10px;
 }
 .btn-upload:hover {
     background-color: #0056b3;
@@ -362,9 +361,35 @@
     transform: translateY(-2px); 
 }
 
+@media (max-width: 600px) {
+    .button-container {
+        display: flex; /* Arrange buttons in a row */
+        justify-content: center; /* Center buttons horizontally */
+        flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+        gap: 10px; /* Add consistent spacing between buttons */
+        margin-top: 20px; /* Space between the box and buttons */
+    }
+
+    
+    #btn,
+    #upload-image,
+    #search-btn,
+    #change-logo-btn {
+        display: inline-block;
+        width: auto; /* Ensure buttons size based on content */
+        padding: 10px 20px; /* Add spacing inside the buttons */
+        text-align: center;
+        border-radius: 5px; /* Rounded corners for better aesthetics */
+    }
+
+     
+    .full-box {
+        margin-top: -120px;
+    }
+}
 
 
-
-
-
-
+.button-container {
+    margin-top: 1px; /* Adds space above the button group */
+    padding-bottom: 20px; /* Ensures there's spacing at the very bottom */
+}
