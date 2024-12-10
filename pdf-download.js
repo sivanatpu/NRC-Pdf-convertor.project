@@ -168,14 +168,13 @@ jQuery(document).ready(function () {
 
           html2canvas(box, {
               scale: 3, // High-quality rendering
-              useCORS: true, // Handle cross-origin issues
-              backgroundColor: null, // Ensure transparent backgrounds are handled
+              useCORS: true, // Handle cross-origin images if any
           }).then((canvas) => {
               const imgData = canvas.toDataURL('image/png');
               const contentWidth = canvas.width * 0.264583; // Convert px to mm
               const contentHeight = canvas.height * 0.264583; // Convert px to mm
               const pdfWidth = 210; // A4 width in mm
-              const pdfHeight = 297; // A4 height in mm
+              const pdfHeight = 280; // A4 height in mm
 
               // Calculate scaling factors for width and height
               const widthScale = pdfWidth / contentWidth;
@@ -186,26 +185,18 @@ jQuery(document).ready(function () {
               const scaledWidth = contentWidth * scale;
               const scaledHeight = contentHeight * scale;
 
-              // Add a small offset to ensure the borders are fully visible
-              const offset = 5; // Adjust this value if necessary
+              // Add some padding to ensure borders are not clipped
+              const padding = 2; // Adjust padding as needed
 
               // Check if content exceeds the page
-              if (!isFirstPage && currentY + scaledHeight + offset > pdfHeight) {
+              if (!isFirstPage && currentY + scaledHeight + padding > pdfHeight) {
                   pdf.addPage(); // Add a new page
                   currentY = 10; // Reset Y position for the new page
               }
 
               // Add the image to the PDF
-              pdf.addImage(
-                  imgData,
-                  'PNG',
-                  (pdfWidth - scaledWidth) / 2, // Center horizontally
-                  currentY, // Vertical position
-                  scaledWidth,
-                  scaledHeight + offset // Add offset to height for borders
-              );
-
-              currentY += scaledHeight + offset + 10; // Update Y position for the next box
+              pdf.addImage(imgData, 'PNG', (pdfWidth - scaledWidth) / 2, currentY, scaledWidth, scaledHeight + padding);
+              currentY += scaledHeight + padding + 10; // Update Y position for the next box
               isFirstPage = false; // Mark that the first page has been used
               callback(); // Continue to the next box
           }).catch((error) => {
@@ -230,14 +221,6 @@ jQuery(document).ready(function () {
       next(); // Start processing the boxes
   });
 });
-
-
-
-
-
-
-
-
 
 
 

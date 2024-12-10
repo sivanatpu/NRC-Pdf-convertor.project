@@ -225,7 +225,6 @@
 }
 
 .last {
-
     position: relative;
     top: 34px;
     right: 60px;
@@ -235,9 +234,6 @@
     width: 90px;
     height: 60px;
     word-spacing: -5px;
-
-
-
 }
 
 .image1 {
@@ -396,4 +392,18 @@
 .button-container {
     margin-top: 1px; /* Adds space above the button group */
     padding-bottom: 20px; /* Ensures there's spacing at the very bottom */
+}
+
+@media (max-width: 600px){
+    .last {
+        position: relative;
+        top: 34px;
+        right: 60px;
+        font-family: "consolas", sans-serif;
+        font-weight: 900;
+        font-size: 0.5rem;
+        width: 90px;
+        height: 60px;
+        word-spacing: -5px;
+    }
 }
