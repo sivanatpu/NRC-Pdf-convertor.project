@@ -5,11 +5,10 @@
 }
 
 .full-box {
-    width: 260px;
-    /* margin-top: -45px; */
+    width: 550px;
     display: flex;
     column-gap: 20px;
-    margin-right: 250px;
+    margin-right: 100px;
     margin-top: 10px;
 }
 
@@ -265,7 +264,7 @@
     color: transparent;
     -webkit-text-stroke: 1.5px palevioletred;
     top: 25px;
-
+     word-spacing: 2px;
     width: 100px;
 
 
@@ -294,7 +293,6 @@
 #change-logo-btn{
      display: inline-block;
      position: relative;
-     
 }
 
 
