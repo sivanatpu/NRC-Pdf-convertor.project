@@ -396,9 +396,8 @@
 
 @media (max-width: 600px) {
     .last h1 {
-        line-height: 1.8; 
-        font-size: 18px; 
-        margin-bottom: 10px; 
+        word-spacing: 0.3px;
+        font-size: 16px; 
     }
 }
 
